@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: url(..img/login_bg.jpeg) center center no-repeat;
+    background-size: cover;
+    height: vh;
+    margin: 0;
+}
