@@ -5,20 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Classics</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="shortcut icon" href="./img/favicon.png">
+
+    <style>
+     .formulario {
+         width: 25%;
+         margin: auto;    
+     }
+     .grupo {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5rem;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif; 
+        
+     }
+     .accion {
+         padding-top: 1rem;
+         text-align: center;
+     }
+     .boton {
+         padding: 1rem 2rem;
+         background-color: chocolate;
+         color: white;
+         font-size: larger;
+         font-family: Arial, Helvetica, sans-serif;
+         font-weight: bold;
+         border: 1rem;
+         border-radius: 2rem;
+     }
+     .option {
+         font-size: 100%;
+         text-align: left;
+         margin-left: 0;
+         gap: 10px;   
+     }
+
+
+    </style>
+
 </head>
 
-<body>
+<body id="bg-img"> <!--ESTA BIEN PUESTO??-->
 
-    <h1>Series y Películas que nunca pasan de moda</h1>
-    <h2>Ingresá ahora para disfrutar de la mejor selección de clásicos de todos los tiempos</h2>
-    <form action="home.html">
-        <label for="user">Nombre de Usuario</label>
-        <input type="text" name="user" required>
-        <label for="pass">Contraseña</label>
-        <input type="password" name="pass" required>
-        <button type="submit">Ingresar</button>
+    <header>
+        <div>
+            <img id="logo" src="../img/logo.png" alt="logo">
+        </div>
 
-    </form>
+     <h1>Series y Películas que nunca pasan de moda</h1>
     
+     <h2>Ingresá ahora para disfrutar de la mejor selección de clásicos de todos los tiempos</h2>
+
+    </header>
+    
+    <form action="home.html" class="formulario">
+       <div class="grupo">
+         <label for="user">Usuario</label>
+         <input type="mail" name="user" placeholder="Correo electrónico" required>
+        </div>
+        <div class="grupo">
+         <label for="pass">Contraseña</label>
+         <input type="password" name="pass" placeholder="Contraseña" required>
+        </div>
+        <div class="option">
+        <a href=>¿Olvidaste tu contraseña?</a><br>
+        <a href="">Registrate aqui</a>
+        </div>
+        <div class="accion">
+         <button type="submit" class="boton">Ingresar</button>
+        </div>
+        
+    </form>
+        
 </body>
 </html>

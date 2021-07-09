@@ -2,8 +2,18 @@
     box-sizing: border-box;
 }
 body {
-    background: url(..img/login_bg.jpeg) center center no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    height: vh;
+    height: 100vh;
     margin: 0;
+}
+
+#bg-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
 }
