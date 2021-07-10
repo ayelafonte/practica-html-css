@@ -1,4 +1,12 @@
-.card-img {
-   width: 25px; 
-   height: 50px;
+.card-video {
+   width: 100%; 
+   height: 25%;
+}
+.container-relacionado {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+.title-rel {
+    width: 250px;
 }

@@ -54,28 +54,3 @@
     text-decoration: none;
     padding: 1rem;
 }
-
-/*MAIN*/
-.container-title{
-    position: relative;
-    top: 30px;
-    margin: 0;
-    text-align: center;   
-}
-.container-general {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;  
-}
-.container-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    margin-top: 50px;
-}
-.card-img {
-    width: 250px;
-    height: 500px;
-    margin: 0;
-    bottom: 0;
-}
