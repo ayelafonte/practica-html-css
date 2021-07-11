@@ -1,10 +1,51 @@
-.card-video { 
-   width: 100%; 
-   height: 25%;
+* {
+    box-sizing: border-box;
 }
+.video-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    top: 25px;
+    margin: 0;
+}
+
 .container-video {
-    top: 100px;
+    width: 100%; 
+    height: 25%;
 }
+.video{
+    width: 100%;
+}
+
+.titulo-principal { 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.detalles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+.card-info {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    width: 25%;
+   
+}
+.actores {
+    list-style: none;
+    padding: 0;
+}
+
+.resumen {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem;
+    width: 60%;
+    margin-top: 3rem;   
+}
+
 .container-relacionado {
     width: 100%;
 }
@@ -12,9 +53,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5rem;
+    margin: 1rem;
 }
 .title-rel {
-    width: 250px;
-    bottom: 50px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+@media all and (max-width: 425px) {
+    .card-info {
+        width: 100%
+    }
+    .resumen {
+        width: 100%;
+    }
 }
