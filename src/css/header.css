@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -22,16 +25,6 @@
     position: relative;
     width: 100px;   
 }
-
-/* .container-search {
-
-} */
-.navbar {
-    position: absolute;
-    right: 0;
-
-}
-
 .navbar-list{
     list-style: none;
     padding: 0;
@@ -41,7 +34,7 @@
     left: 0;
 }
 
-.navbar > .navbar-list .navbar-item{ /*ESPECIFICIDAD: Buscame un navbar que tenga como hijo navbar list y a cualquier navbar-item que tenga*/
+.navbar > .navbar-list .navbar-item{ 
     display: inline-block;
     margin: 0;
     
