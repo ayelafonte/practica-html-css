@@ -1,6 +1,10 @@
+.body {
+    background: gray;
+    background-size: cover;
+}
 .container-title{
     position: relative;
-    top: 30px;
+    top: 40px;
     margin: 0;
     text-align: center;   
 }
@@ -13,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
     margin-top: 50px;
 }
 .card-img {
@@ -24,7 +29,8 @@
 }
 .card {
     width: 250px;
-    position: relative;    
+    position: relative; 
+    margin: 1rem;   
 }
 .container {
     width: 95%;
@@ -61,6 +67,5 @@
     right: 0;
     padding: 2rem;
     color: gray;
-}
 }
 

@@ -12,45 +12,120 @@
     z-index: 10;
 }
 .logo-img {
-    /*position: absolute;*/
-    /*float: left;*/
     width: 50px;
     height: 50px;
     margin: 0;
     
 }
 .logo-title{
-    /*float: left;*/
-    color: blanchedalmond;
-    left: 0;
-    /*position: absolute;*/
+    color:  white;
+    position: relative;
+    left: 
     width: 100px;
-    /*align-self: center;*/
+    
 }
 
-.container-search {
-    /*align-self: center;*/
+/* .container-search {
+
+} */
+.navbar {
+    position: absolute;
+    right: 0;
+
 }
 
 .navbar-list{
     list-style: none;
     padding: 0;
-    /*float: left;*/
+    display: flex;
     margin: 0 auto;
     right: 0;
     left: 0;
-
 }
+
 .navbar > .navbar-list .navbar-item{ /*ESPECIFICIDAD: Buscame un navbar que tenga como hijo navbar list y a cualquier navbar-item que tenga*/
     display: inline-block;
     margin: 0;
     
-
 }
 .navbar-item a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
-    color: chartreuse;
+    color: white;
     text-decoration: none;
     padding: 1rem;
 }
+
+/*MENÚ*/
+
+.burger-label {
+    position: absolute;
+    top: .3rem;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+}
+#burger-checkbox {
+    position: absolute;
+    top: .3rem;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    display: none;
+    initial-value: 0;
+}
+.burger-label::before {
+    content: "";
+    background-color: white;
+    width: 2rem;
+    height: .2rem;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    box-shadow: 0 .45rem 0 0 white, 0 .9rem 0 0 white;
+}
+
+#burger-checkbox:checked ~ .navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 51px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    width: 25vh;
+    opacity: .85;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media all and (max-width: 340px) {
+    .logo-title {
+        display: none;
+    }
+}
+ 
+@media only screen and (max-width: 935px) {
+    .navbar-list {
+        display: none;
+    }
+}
+@media only screen and (min-width: 936px) {
+    .burger-label {
+        display: none;
+    }
+    .navbar-list{
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+    }
+}
+@media 
