@@ -3,10 +3,11 @@
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(../img/login.jpg);
+    background-image: url(../img/tv.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    /*background-size: contain; COVER SE VE BIEN DE TODOS LADOS*/
+    background-size: cover;
+    background-attachment: fixed;
     height: max-content;
     margin: 0;
     position: absolute;
@@ -26,8 +27,8 @@ body {
 }
 .container-form {
     width:50%;
-    background-color: darkgrey;
-    opacity: 0.8;
+    /*background-color: darkgrey;
+    opacity: 0.8;*/
     padding: 10px;
     margin:auto;
     right: 0;
@@ -58,8 +59,8 @@ body {
     border-radius: 2rem;
 }
 .option {
-    
-    text-align: left;
+    font-size: small;
+    text-align: center;
     margin-left: 0;
     
 }
